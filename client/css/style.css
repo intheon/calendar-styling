@@ -1,0 +1,53 @@
+html, body
+{
+	margin: 0;
+	padding: 0;
+}
+
+.calendar-wrapper
+{
+	width: 3000px;
+	display:flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.calendar-cell
+{
+	border: 1px solid;
+	width: 64px;
+	float:left;
+	box-sizing: border-box;
+}
+
+.calendar-cell:nth-child(7n + 1)
+{
+	clear: both;
+	float:left;
+	flex-wrap: nowrap;
+}
+
+/*
+.calendar-wrapper div:nth-child(35n + 1)
+{
+	clear: both;
+}
+*/
+
+
+/*
+
+.calendar-cell:nth-child(7n + 1)
+{
+	clear: both;
+	float:left;
+}
+
+.calendar-wrapper div:nth-child(35n + 1)
+{
+	background: red;
+	float:left;
+}
+
+
+*/
